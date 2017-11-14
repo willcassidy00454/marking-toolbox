@@ -11,9 +11,6 @@ student_filepath = mt_filepath(mt_settings.output_dir, student_data);
 [penalties, questions_remarks, log] = ...
         mt_parse_questions_remarks(student_marks, mt_settings);
 
-%% Write out log text file
-mt_write_text_file(student_filepath + '.txt', log);
-
 %% Calculate student final mark
 % We are adding the penalty because the convention used throughout the
 % toolbox is that penalty values are negative, i.e. if penalties = -5
@@ -22,11 +19,8 @@ mark = mt_settings.initial_mark + sum(penalties) + ...
        mt_settings.penalty_per_day_of_delay*student_data.days_of_delay;
 
 %% Generate latex file and write it out
-latex = mt_generate_student_report(student_data, ... 
-                                   questions_title, ...
-                                   questions_remarks,...
-                                   mark, ...
-                                   mt_settings);
+latex = mt_generate_feedback(student_data, questions_title, ...
+                             questions_remarks, mark, mt_settings);
 mt_write_text_file(student_filepath + '.tex', latex);
 
 %% Create pdf file
@@ -41,3 +35,12 @@ system(char(strcat({'rm '}, student_filepath, '.log')));
 system(char(strcat({'rm '}, student_filepath, '.out')));
 system(char(strcat({'rm '}, student_filepath, '.tex')));
 
+%% Create email
+if mt_settings.send_emails
+    email = mt_generate_email(student_data, mark, mt_settings);
+    mt_write_text_file(student_filepath + '.txt', email);
+    
+    
+%% Write out log text file
+mt_write_text_file(student_filepath + '.log', log);
+end

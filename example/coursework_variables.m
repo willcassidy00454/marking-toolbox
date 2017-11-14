@@ -19,3 +19,9 @@ mt_settings.pdflatex_filename = '/Library/TeX/texbin/pdflatex';
 mt_settings.remove_penalty_from_text = true;
 mt_settings.feedback_title = 'Feedback of ASP coursework 1';
 mt_settings.message_no_remarks = 'This question was completed correctly.';
+
+%% Email settings
+mt_settings.send_emails = true;
+mt_settings.email_template = 'email_template.txt';
+mt_settings.feedback_description = ...
+            'the first coursework of the Sound Synthesis module';
