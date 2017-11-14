@@ -1,37 +1,10 @@
 % Generate marks and latex feedback for coursework
 % 
-% Marking Toolbox
+% Marking Matlab Toolbox
 % Copyright Enzo De Sena 2017
 
-function [penalties, remarks, log] = ...
-    mt_parse_student_marks(student_marks, cw_settings)
-
-%% Check consistency of inputs
-[temp, num_questions] = size(student_marks);
-assert(temp==1);
-
-%% Define variables
-penalties = nan(num_questions, 1);
-remarks = cell(num_questions, 1);
-log = string; % Initialise log
-
-%% Find penalties
-for question_id = 1:num_questions
-    remark_str = student_marks{question_id};
-    
-    [penalties(question_id), remarks{question_id}, question_log] = ...
-        mt_find_penalty(remark_str, cw_settings);
-    
-    log = log + 'Question id ' + num2str(question_id) + ':' + newline + ...
-                 question_log + newline + newline;
-end
-
-end
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 function [question_penalty, question_str, log] = ...
-                    mt_find_penalty(question_str, cw_settings)
+                    mt_parse_question_remarks(question_str, cw_settings)
 wrong_format_msg = strcat('Wrong format of penalty, ',...
                           'should be (penalty:-X), (penalty:-XX), ',...
                           '(penalty:+X) or (penalty:+XX)');
