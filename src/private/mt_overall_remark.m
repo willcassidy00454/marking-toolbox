@@ -1,4 +1,8 @@
-function remark = mt_overall_remark(mark, late_penalty, mt_settings)
+function remark = mt_overall_remark(mark, late_penalty, mt_settings, for_latex)
+
+if nargin < 4
+    for_latex = true;
+end
 
 [num_levels, ~] = size(mt_settings.overall_remarks);
 
@@ -10,6 +14,11 @@ for n=1:num_levels
 end
 
 if late_penalty < 0
-    remark = remark + " Your coursework incurred a~$" + num2str(late_penalty) +...
-        "$\% late submission penalty (this penalty is already included in the overall mark above).";
+    if for_latex
+        penalty_string = "~$" + num2str(late_penalty) + "$\%";
+    else
+        penalty_string = " " + num2str(late_penalty) + "%";
+    end
+    remark = remark + " Your coursework incurred a" + penalty_string + ...
+        " late submission penalty (this penalty is already included in the overall mark above).";
 end
