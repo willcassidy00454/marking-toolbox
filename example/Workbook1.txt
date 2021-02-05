@@ -1,3 +1,0 @@
-Name	Surname	Student ID	Email	Late submission penalty	Question 1.1	Question 1.2
-Jane	Doe		joandoe@surrey.ac.uk	-20	P11_GEQ	P11_OTH
-John 	Doe		johndoe@surrey.ac.uk	0	P11_GEQ P11_GEQ	

@@ -1,6 +1,8 @@
 Dear MT_STUDENT_NAME,
 
-Please find attached the detailed feedback and mark (MT_STUDENT_MARK%) for MT_FEEDBACK_DESCRIPTION. Please notice that the mark is provisional and subject to the approval of the board of studies.
+Please find attached the detailed feedback and mark for MT_FEEDBACK_DESCRIPTION. MT_OVERALL_REMARK
+
+Please notice that the mark is provisional and subject to the approval of the board of studies. The mark is calculated in line with the University’s generic Undergraduate Grade Descriptors, which can be found on the Programme Handbook.
 
 If you would like to also receive verbal feedback, or if you believe there may have been a mistake in the correction of the coursework, please do not hesitate to contact me. 
 
@@ -14,10 +16,10 @@ Lecturer (Assistant Professor) in Audio
 Institute of Sound Recording
 Department of Music & Media
 University of Surrey
-Guildford, Surrey, GU2 7XH
-United Kingdom
+Guildford, Surrey, GU2 7XH, UK
 
 Office: 07 BC 03
 E-mail: e.desena@surrey.ac.uk
-Telephone: +44 (0) 1483 68 6505
 URL: desena.org
+Twitter: @EnzoResearch
+Skype: enzodesena
