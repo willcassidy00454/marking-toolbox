@@ -12,11 +12,18 @@ The toolbox works on the assumption that you mark based on a **penalty scheme**,
 ### Example of email to student with attachment
 <img src="docs/email.png" width="600"/>
 
-### Example of Excel spreadsheet that produced the PDF and email above
-Highlighted is the relevant row. The macros ```P11_GEQ``` and ```P12_OTH``` are contained in a separate file. 
+### Example of Excel spreadsheet
+Highlighted is the relevant row that produced the PDF and email above. 
 <img src="docs/excel.png" width="600"/>
 
-
+The macros ```P11_GEQ``` and ```P12_OTH``` are contained in a separate file ("coursework_variables.m"): 
+```Matlab
+mt_settings.macros = {
+   'P11_GEQ', 'This is a macro message giving a penalty of -5 points. This is also invoking the solution for this point. [penalty:-5] [solution]\n\n';
+   'P12_OTH', 'This is a macro message giving a penalty of +5 points. Since the penalty is positive, this will add to the mark [penalty:+5]\n\n';
+};
+```
+ 
 ## Getting Started
 
 ### Prerequisites
