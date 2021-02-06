@@ -6,10 +6,10 @@ You input the marks and comments via a tab-separated text file on Excel. Then, t
 
 The toolbox works on the assumption that you mark based on a **penalty scheme**, i.e. you start from a maximum possible mark and then remove marks based on how the student performed on individual questions. 
 
-### Example of the PDF output
+### Example of automated PDF output
 <img src="docs/pdfoutput.png" width="600"/>
 
-### Example of email to student with attachment
+### Example of automated email to student with attachment
 <img src="docs/email.png" width="600"/>
 
 ### Example of Excel spreadsheet
