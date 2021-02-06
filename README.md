@@ -38,9 +38,9 @@ Run on the Matlab console ```addpath your-path-to/marking-toolbox/src``` and you
   * Within each cell you can add a macro, e.g. ```P11_GEQ``` as viewed in the example above, or add a numerical penalty to the question using the syntax "[penalty:-XX]". A negative number will **subtract** from the overall mark. You can also include a positive penalty, using the syntax "[penalty:+XX]". This penalty syntax will be removed from the final files (if you so wish). 
   * You can invoke a solution via the syntax "[solution]". When seeing this tag, the toolbox will look into the subdirectory ```solution_tex``` and a Tex file with the same name as the Question (i.e. first row).  
 * Next you run on Matlab:
-  * Run ```mt_run_parsing('coursework_variables.m')```. This will generate a new tab-separated Excel file containing the final marks in "outputs/\_parsed_marks.txt". I suggest you look at this file to check the level of marks is as you expected. If you need to rescale them, you can change the relative settings in "coursework_variables.m" (see that file for a more detailed explanation), and then rerun ```mt_run_feedback('coursework_variables.m')```.
-  * Run ```mt_run_feedback('coursework_variables.m')```. This will generate the PDF files for each student using latex.
-  * Run ```mt_send_emails('coursework_variables.m')```. This will open Mail ready for you to hit "Send" and you are done!
+  * On the Matlab console, run ```mt_run_parsing('coursework_variables.m')```. This will generate a new tab-separated Excel file containing the final marks in "outputs/\_parsed_marks.txt". I suggest you look at this file to check the level of marks is as you expected. If you need to rescale them, you can change the relative settings in "coursework_variables.m" (see that file for a more detailed explanation), and then rerun ```mt_run_feedback('coursework_variables.m')```.
+  * On the Matlab console, run ```mt_run_feedback('coursework_variables.m')```. This will generate the PDF files for each student using latex.
+  * On the Matlab console, run ```mt_send_emails('coursework_variables.m')```. This will open Mail ready for you to hit "Send" and you are done!
 
 
 **My advice to get started is to try the example included in "marking-toolbox/example" and run the ```mt_run_feedback```, ```mt_run_parsing``` and ```mt_send_emails``` as above.**
