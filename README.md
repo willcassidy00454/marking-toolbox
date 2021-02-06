@@ -1,6 +1,8 @@
 # Marking Toolbox
 
-This toolbox represents my peak OCD for perfectly formatted and no-time-wasted feedback for student coursework/exams. The toolbox runs on Excel, Matlab and Latex (yes..). You input the marks and comments via a tab-separated text file on Excel. This can include macros, tags to add penalty points, and invoke a pre-formatted solution. Then, through Matlab you can (a) parse the file, (b) generate PDFs with the feedback through latex, and finally (c) automatically send emails to students with the PDF as attachment.
+This toolbox represents my peak OCD for perfectly formatted and no-time-wasted feedback for student coursework/exams. The toolbox runs on Excel and Matlab (yes..). The PDFs are generated in the background using Latex.
+
+You input the marks and comments via a tab-separated text file on Excel. Then, through Matlab you will parse that file, generate PDFs, and automatically send emails to students with the PDF as attachment.
 
 The toolbox works on the assumption that you mark based on a **penalty scheme**, i.e. you start from a maximum possible mark and then remove marks based on how the student performed on individual questions. 
 
