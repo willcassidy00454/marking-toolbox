@@ -3,14 +3,14 @@ mt_settings = struct();
 
 
 %% Common mistakes
-mt_settings.macro_preamble = '';
-mt_settings.macro_postamble = '';
-
 mt_settings.macros = {
     'P11_GEQ', 'This is a macro message giving a penalty of -5 points. This is also invoking the solution for this point. [penalty:-5] [solution]\n\n';
 	'P12_OTH', 'This is a macro message giving a penalty of +5 points. Since the penalty is positive, this will add to the mark [penalty:+5]\n\n';
     };
  
+mt_settings.macro_preamble = '';                                           % This adds a preamble to each macro
+mt_settings.macro_postamble = '';                                          % This adds a postamble to each macro
+
 
 
 %% Marks
