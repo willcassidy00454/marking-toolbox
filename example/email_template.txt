@@ -1,6 +1,6 @@
 Dear MT_STUDENT_NAME,
 
-Please find attached the detailed feedback and mark for MT_FEEDBACK_DESCRIPTION. MT_OVERALL_REMARK
+Please find attached the detailed feedback and mark (MT_STUDENT_MARK%) for MT_FEEDBACK_DESCRIPTION. MT_OVERALL_REMARK
 
 Please notice that the mark is provisional and subject to the approval of the board of studies. The mark is calculated in line with the University’s generic Undergraduate Grade Descriptors, which can be found on the Programme Handbook.
 
