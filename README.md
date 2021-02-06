@@ -19,8 +19,6 @@ Highlighted is the relevant row. The macros ```P11_GEQ``` and ```P12_OTH``` are 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your machine.
-
 ### Prerequisites
 
 You need Matlab and Latex. The automatic email sender works through an AppleScript, so it only runs on Mac. 
