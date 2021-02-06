@@ -1,4 +1,4 @@
 example/.texpadtmp/
-example/feedback_template.pdf
+*.pdf
 *.m~
 *.DS_Store
