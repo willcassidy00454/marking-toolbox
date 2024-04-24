@@ -1,3 +1,1 @@
-Name	Surname	Student ID	Email	Late submission penalty	Question 1.1	Question 1.2
-Jane	Smith		janesmith@surrey.ac.uk	0	This is a comment not using a macro and having a -10 penalty. [penalty:-10]	P12_OTH
-John 	Smith		johnsmith@surrey.ac.uk	-10	P11_GEQ	
+Name	Surname	Student ID	Email	Late submission penalty	MIDI SupportJohn	Smith	123456	john.smith@surrey.ac.uk	-10	P11_GEQJane	Smith	654321	jane.smith@surrey.ac.uk	0	BASE_P13  \item This is a comment not using a macro and having a -10 penalty. [penalty:-10] \n\nDan	Smith	162534	dan.smith@surrey.ac.uk	0	P12_OTH
